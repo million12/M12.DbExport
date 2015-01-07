@@ -1,0 +1,19 @@
+M12:
+  DbExport:
+    # List content-only tables
+    contentTables:
+      - typo3_flow_resource_resource
+      - typo3_flow_resource_resourcepointer
+      - typo3_media_domain_model_asset
+      - typo3_media_domain_model_asset_tags_join
+      - typo3_media_domain_model_audio
+      - typo3_media_domain_model_document
+      - typo3_media_domain_model_image
+      - typo3_media_domain_model_tag
+      - typo3_media_domain_model_video
+      - typo3_neos_domain_model_domain
+      - typo3_neos_domain_model_site
+      - typo3_typo3cr_domain_model_contentobjectproxy
+      - typo3_typo3cr_domain_model_nodedata
+      - typo3_typo3cr_domain_model_nodedimension
+      - typo3_typo3cr_domain_model_workspace
