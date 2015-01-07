@@ -6,6 +6,12 @@ It might be considered as a temporary workaround to sometimes faulty `./flow sit
 
 By default it exports only "content" tables listed in [Settings.yaml](Configuration/Settings.yaml), unless you specify `--mode=all`.
 
+
+## Installation
+
+`composer require m12/neos-plugin-dbexport:dev-master`
+
+
 ## Usage
 
 #### Export
