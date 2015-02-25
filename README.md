@@ -29,13 +29,13 @@ You can also specify path where the .sql file will be exported:
 
 **Caveat**: import process will drop and override the tables, therefore make sure you won't press wrong buttons accidentally.
 
-`./flow db:export --sql-file my-dump.sql`  
+`./flow db:import --sql-file my-dump.sql`  
 to simply import selected .sql file.
 
-`./flow db:export --package-key Your.SitePackage`  
+`./flow db:import --package-key Your.SitePackage`  
 to import `Your.SitePackage/Private/Resources/Content/Content.sql`
 
-`./flow db:export --package-key Your.SitePackage --mode=all`  
+`./flow db:import --package-key Your.SitePackage --mode=all`  
 to import `Your.SitePackage/Private/Resources/Content/Dump.sql`
 
 
