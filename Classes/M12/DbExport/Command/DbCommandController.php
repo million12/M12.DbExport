@@ -78,10 +78,12 @@ class DbCommandController extends CommandController {
 		$cmd = 'mysqldump -v' . $this->getSqlConnectionParams() . " $dbName $tablesToExport > $sqlFile";
 		$result = $this->exec($cmd);
 		$size = filesize($sqlFile);
+		// Note: make it compatible with Flow 2.2 where Files::bytesToSizeString() is not available
+		$sizeFormatted = method_exists('TYPO3\Flow\Utility\Files','bytesToSizeString') ? Files::bytesToSizeString($size) : round($size/1024).' kB';
 
 		$this->outputLine();
 		$this->outputLine("Database '$dbName' has been exported to '$sqlFile' file.");
-		$this->outputLine("Exported $sqlFile file size: " . Files::bytesToSizeString($size));
+		$this->outputLine("Exported $sqlFile file size: " . $sizeFormatted);
 		$this->outputLine();
 		$this->outputLine("Exported tables: " . ($tablesToExport ? $tablesToExport : '[all]') . '.');
 		$this->outputLine();
