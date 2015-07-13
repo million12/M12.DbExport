@@ -3,17 +3,24 @@ M12:
     # List content-only tables
     contentTables:
       - typo3_flow_resource_resource
-      - typo3_flow_resource_resourcepointer
+      - typo3_media_domain_model_adjustment_abstractimageadjustment
       - typo3_media_domain_model_asset
       - typo3_media_domain_model_asset_tags_join
+      - typo3_media_domain_model_assetcollection
+      - typo3_media_domain_model_assetcollection_assets_join
+      - typo3_media_domain_model_assetcollection_tags_join
       - typo3_media_domain_model_audio
       - typo3_media_domain_model_document
       - typo3_media_domain_model_image
+      - typo3_media_domain_model_imagevariant
       - typo3_media_domain_model_tag
+      - typo3_media_domain_model_thumbnail
       - typo3_media_domain_model_video
       - typo3_neos_domain_model_domain
       - typo3_neos_domain_model_site
+      - typo3_neos_eventlog_domain_model_event
       - typo3_typo3cr_domain_model_contentobjectproxy
       - typo3_typo3cr_domain_model_nodedata
       - typo3_typo3cr_domain_model_nodedimension
       - typo3_typo3cr_domain_model_workspace
+      - typo3_typo3cr_migration_domain_model_migrationstatus
