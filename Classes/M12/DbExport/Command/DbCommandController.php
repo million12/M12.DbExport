@@ -171,7 +171,10 @@ class DbCommandController extends CommandController {
 		$user = isset($this->backendOptions['user']) ? $this->backendOptions['user'] : 'root';
 		$pass = isset($this->backendOptions['password']) ? $this->backendOptions['password'] : '';
 		$port = isset($this->backendOptions['port']) ? $this->backendOptions['port'] : 3306;
-		return " -h{$host} -u{$user} -p{$pass} -P{$port}";
+		if (!empty($pass)) {
+			return " -h{$host} -u{$user} -p{$pass} -P{$port}";
+		}
+		return " -h{$host} -u{$user} -P{$port}";
 	}
 
 	/**
